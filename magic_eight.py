@@ -1,7 +1,13 @@
 result=[]
 def ask(): 
-    user_input = input("What is your name?")
-    result.append(user_input)
-    return(result)
-
-print(ask())
+    question = ""
+    q_list = []
+    while question != "quit":
+        question = input("What's your question?(ends with '?')('quit' for quit)")
+        if question[-1] == "?":
+            print(pick_answer())
+            q_list.append(question)
+        elif question == "quit":
+            break
+        else:
+            input("I'm sorry, I can only answer questions. Ask again.")
