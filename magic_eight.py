@@ -25,7 +25,7 @@ def pick_answer():
     return random.choice(answers)
 
 
-ask_question()
+ask()
 
 
 
