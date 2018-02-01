@@ -1,4 +1,3 @@
-#personA
 
 from random import randrange
 
@@ -41,3 +40,4 @@ def ask():
     return(result)
 
 ask()
+
